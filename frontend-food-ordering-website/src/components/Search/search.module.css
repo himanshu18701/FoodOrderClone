@@ -1,0 +1,53 @@
+:root {
+    --primary-bg-color: #f1f1f1;
+    --button-bg-color: #e72929;
+    --button-hover-color: #cf2222;
+    --input-text-color: #333; 
+    --button-text-color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container input {
+    border-radius: 20px 0 0 20px;
+    border: 2px solid var(--primary-bg-color);
+    height: 3rem;
+    width: 20rem;
+    background-color: var(--primary-bg-color);
+    padding: 0 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--input-text-color);
+    outline: none;
+    transition: box-shadow 0.3s;
+  }
+  
+  .container input:focus {
+    box-shadow: 0 0 0 2px var(--button-bg-color);
+  }
+  
+  .container button {
+    border-radius: 0 20px 20px 0;
+    border: none;
+    height: 3.05rem;
+    width: 5rem;
+    font-size: 1rem;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    opacity: 0.9;
+    outline: none;
+    transition: background-color 0.3s, opacity 0.3s;
+  }
+  
+  .container button:hover {
+    background-color: var(--button-hover-color);
+    opacity: 1;
+    cursor: pointer;
+  }
+  

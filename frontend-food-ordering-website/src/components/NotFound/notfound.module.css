@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #294ce7;
+    --font-size-large: 1.5rem;
+    --font-size-normal: 1rem;
+    --border-radius: 10rem;
+    --padding: 0.7rem 1rem;
+    --margin: 1rem;
+    --opacity-normal: 0.8;
+    --opacity-hover: 1;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-large);
+    font-weight: 100;
+    height: 15rem;
+    transition: all 0.3s ease;
+  }
+  
+  .container a {
+    font-size: var(--font-size-normal);
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    margin: var(--margin);
+    opacity: var(--opacity-normal);
+    text-decoration: none;
+    transition: opacity 0.3s ease; 
+  }
+  
+  .container a:hover {
+    opacity: var(--opacity-hover);
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      font-size: 1.2rem;
+    }
+    .container a {
+      font-size: 0.9rem;
+      padding: 0.6rem 0.9rem;
+    }
+  }
+  

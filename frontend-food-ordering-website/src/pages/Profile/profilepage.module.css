@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #f7f7f7; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 2rem;
+  }
+  
+  .details {
+    width: 28rem;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  

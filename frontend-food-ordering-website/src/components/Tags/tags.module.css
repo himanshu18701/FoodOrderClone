@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container a {
+    background-color: #f0f0f0;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0.3rem;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #007bff;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  
+  .container a:hover,
+  .container a:focus {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .container a.active {
+    background-color: #0056b3;
+    color: #ffffff;
+  }
+  

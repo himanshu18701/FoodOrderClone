@@ -1,0 +1,37 @@
+:root {
+    --container-margin-top: 3rem;
+    --details-width: 28rem;
+    --spacing-md: 1rem;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: var(--container-margin-top);
+  }
+  
+  .details {
+    width: var(--details-width);
+  }
+  
+  .details form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--spacing-md);
+  }
+  
+  .register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 768px) {
+    .details {
+      width: 100%;
+      padding: 0 var(--spacing-md);
+    }
+  }
+  

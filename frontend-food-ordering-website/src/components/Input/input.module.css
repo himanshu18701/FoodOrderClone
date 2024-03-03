@@ -1,0 +1,53 @@
+:root {
+    --input-border-color: grey;
+    --input-border-focus-color: blue;
+    --input-placeholder-color: #dfdfdf;
+    --input-font-size: 1.1rem;
+    --input-placeholder-font-size: 0.95rem;
+    --error-color: red;
+    --error-font-size: 0.95rem;
+    --transition-duration: 0.3s;
+}
+  
+  .input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 2px solid var(--input-border-color);
+    transition: border-color var(--transition-duration) ease-out, border-width var(--transition-duration) ease-out;
+    background-color:white;
+    font-size: var(--input-font-size);
+    outline: none;
+    padding: 0.5rem ;
+  }
+  
+  .input::placeholder {
+    color: var(--input-placeholder-color);
+    font-size: var(--input-placeholder-font-size);
+  }
+  
+  .input:focus {
+    border-color: var(--input-border-focus-color);
+    border-width: 3px;
+  }
+  
+  .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    height: 100%;
+    width: 12rem;
+    color: var(--error-color);
+    text-align: center;
+    font-size: var(--error-font-size);
+    transition: opacity var(--transition-duration) ease-out;
+    opacity: 0;
+  }
+  
+  .error.active {
+    opacity: 1;
+  }
+  

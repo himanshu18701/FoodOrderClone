@@ -1,0 +1,41 @@
+:root {
+    --button-bg-color: #007bff;
+    --button-hover-bg-color: #0056b3;
+    --button-text-color: white;
+    --button-border-radius: 0.8rem;
+    --button-padding: 1rem 2rem;
+    --transition-duration: 0.3s;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .container button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    outline: none;
+    font-weight: 500;
+    border-radius: var(--button-border-radius);
+    padding: var(--button-padding);
+    margin: 1rem auto;
+    opacity: 0.9;
+    transition: background-color var(--transition-duration), opacity var(--transition-duration), transform var(--transition-duration);
+    text-transform: uppercase;
+  }
+  
+  .container button:hover {
+    cursor: pointer;
+    background-color: var(--button-hover-bg-color);
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  
+  .container button:active {
+    transform: scale(0.95);
+  }
+  
