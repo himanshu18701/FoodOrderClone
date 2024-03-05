@@ -1,3 +1,11 @@
+## Note:
+Removed Personal Mongodb database address for security reasons 
+To use project fully Create a MongoDB project name FoodOrderDb and create two collection files
+--User
+--Order
+and store address of mongodb in application.properties in Backend part
+src/main/resources
+
 # Food Order Clone
 
 This project is a food order system clone, allowing users to browse through food items, place orders, and manage them through an admin panel. It leverages the following technologies:
