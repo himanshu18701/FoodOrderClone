@@ -1,8 +1,8 @@
 ## Note:
 Removed Personal Mongodb database address for security reasons 
 To use project fully Create a MongoDB project name FoodOrderDb and create two collection files
---User
---Order
+-**User**
+-**Order**
 and store address of mongodb in application.properties in Backend part
 src/main/resources
 
